@@ -27,6 +27,15 @@ public class Main {
         head.next = tail;
         tail.prev = head;
     }
+    public int size() {
+        int count = 0;
+        Node tempHead = head;
+        while (tempHead.prev != null) {
+            tempHead = head.prev;
+            count ++;
+        }
+        return count;
+    }
     public void insert(int value) {
         Node current = head;
         current.lock.lock();
@@ -54,6 +63,7 @@ public class Main {
             next.lock.unlock();
         }
     }
+
     public static void main(String[] args) {
 
     }
