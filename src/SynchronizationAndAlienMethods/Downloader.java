@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 
-
+/*
 public class Downloader extends Thread{
     private InputStream in;
     private OutputStream out;
@@ -35,3 +35,4 @@ public class Downloader extends Thread{
     }
 
 }
+*/
